@@ -1,2 +1,2 @@
 ?COMMENT external ip getter
-HTTP(ACCEPT) $FW net:monip_org
+HTTP(ACCEPT) $FW net:$monip_org

@@ -12,7 +12,7 @@ Invalid(DROP) net all tcp
 ACCEPT net $FW tcp $PORT_SSH
 
 ?COMMENT dns resolution
-DNS(ACCEPT) $FW net:dns_resolvers
+DNS(ACCEPT) $FW net:$dns_resolvers
 
 ?COMMENT debugging
 Ping(ACCEPT) net $FW
