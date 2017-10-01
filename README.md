@@ -46,3 +46,7 @@ To apply on a remote host named `FIREWALLHOST` which you can reach as `root` usi
 
 * run `shorewall remote-start -c build/shorewall FIREWALLHOST` on your computer
 * run `shorewall6 remote-start -c build/shorewall6 FIREWALLHOST` on your computer
+
+This can be done using the helper script :
+
+    bin/apply-lite.sh FWHOST1 FWHOST2 FWHOST3 ...
