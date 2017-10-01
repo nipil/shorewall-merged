@@ -1,0 +1,4 @@
+# zone-name interface-name ipv4-options ipv6-options
+net eth0 tcpflags,nosmurfs,routefilter,logmartians,sourceroute=0 tcpflags,forward=1,sourceroute=0
+
+# d1 dmz1 tcpflags,nosmurfs,routefilter,logmartians tcpflags,forward=1

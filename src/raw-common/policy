@@ -1,0 +1,4 @@
+$FW net ACCEPT
+net all DROP # info
+# THE FOLLOWING POLICY MUST BE LAST
+all all REJECT # info
