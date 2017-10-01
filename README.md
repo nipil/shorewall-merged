@@ -35,3 +35,14 @@ Once your configurations are generated, you can push them to your firewall(s).
 * run `sudo shorewall6 check` on your firewall
 * run `sudo shorewall restart` on your firewall
 * run `sudo shorewall6 restart` on your firewall
+
+## if your firewall uses `shorewall-lite` and `shorewall6-lite`
+
+Pre-requisites :
+
+* `LOGFILE` must be defined in the configuration of `shorewall-lite` and `shorewall6-lite` on each remote firewall : you can install `rsyslog` on each remote firewall and use `/var/log/syslog` as `LOGFILE`
+
+To apply on a remote host named `FIREWALLHOST` which you can reach as `root` using SSH :
+
+* run `shorewall remote-start -c build/shorewall FIREWALLHOST` on your computer
+* run `shorewall6 remote-start -c build/shorewall6 FIREWALLHOST` on your computer
