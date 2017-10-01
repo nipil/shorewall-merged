@@ -11,10 +11,10 @@ It produces a `shorewall` configuration and a `shorewall6` configuration, from c
 * output configuration are in `build`
 * there is one output configuration for `shorewall` and one for `shorewall6`
 * each file in `raw-common` folder is copied to both `shorewall` and `shorewall6` output configuration
-* each file in `raw-shorewall` folder is appened to the config file in `shorewall` output
-* each file in `raw-shorewall6` folder is appened to the config file in `shorewall6` output
-* the host names and their ip are defined in `processed/addresses` and dispatched in `shorewall/params` and `shorewall6/params`
-* zones and interfaces and defined in `processed/interfaces` and dispatched in `shorewall/zones`, `shorewall6/zones`, `shorewall/interfaces`, `shorewall6/interfaces`
+* each file in `raw-shorewall` folder is appended to the config file in `shorewall` output
+* each file in `raw-shorewall6` folder is appended to the config file in `shorewall6` output
+* the host names and their ip are defined in `processed/addresses` and appended to `shorewall/params` and `shorewall6/params`
+* zones and interfaces and defined in `processed/interfaces` and appended to `shorewall/zones`, `shorewall6/zones`, `shorewall/interfaces`, `shorewall6/interfaces`
 
 # How to use
 
