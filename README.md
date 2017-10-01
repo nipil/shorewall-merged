@@ -22,3 +22,16 @@ It produces a `shorewall` configuration and a `shorewall6` configuration, from c
 * add your hosts and addresses in `processed/addresses`
 * add your interfaces and options in `processed/interfaces`
 * run `bin/merge.sh`
+
+# Then what ?
+
+Once your configurations are generated, you can push them to your firewall(s).
+
+## if your firewall uses `shorewall` and `shorewall6`
+
+* push the files in `build/shorewall` to your firewall's `/etc/shorewall` folder
+* push the files in `build/shorewall6` to your firewall's `/etc/shorewall6` folder
+* run `sudo shorewall check` on your firewall
+* run `sudo shorewall6 check` on your firewall
+* run `sudo shorewall restart` on your firewall
+* run `sudo shorewall6 restart` on your firewall
