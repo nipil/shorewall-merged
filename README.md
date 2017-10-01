@@ -36,6 +36,10 @@ Once your configurations are generated, you can push them to your firewall(s).
 * run `sudo shorewall restart` on your firewall
 * run `sudo shorewall6 restart` on your firewall
 
+This can be done using the helper script :
+
+    bin/apply-full.sh FWHOST1 FWHOST2 FWHOST3 ...
+
 ## if your firewall uses `shorewall-lite` and `shorewall6-lite`
 
 Pre-requisites :
